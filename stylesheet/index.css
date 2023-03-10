@@ -2,6 +2,10 @@ body {
     font-family:'Signika Negative', sans-serif;
 }
 
+.small-text {
+    font-size:1rem;
+}
+
 .best-performer--header-logo {
     font-family: 'Lobster', cursive;
     font-size: 3rem;
@@ -38,6 +42,40 @@ body {
     background-color: var(--color-info);
 }
 
+.best-performer--main-top-players, .best-performer--main-blogs-players{
+    max-width: 1000px;
+    margin:auto;
+}
+
+.best-performer--main-top-players-container {
+    display:grid;
+    gap:3rem 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.best-performer--main-top-blogs-container {
+    display:inline-grid;
+    gap:3rem 2rem;
+    grid-template-columns:1fr 1fr;
+}
+
+.blog-img-box {
+    width:60%;
+}
+
+.blog-img {
+    max-width: 100%;
+}
+
+.best-performer--main-top-players-container img {
+    width:10rem;
+    transition: width 0.5s;
+}
+
+.best-performer--main-top-players-container img:hover{
+    width: 12.5rem;
+    text-shadow: 1px 1px 0.5px var(--color-info);
+}
 @media only screen and (max-width:800px) {
     .best-performer--header-main-menu {
         flex-direction: column;
@@ -56,6 +94,14 @@ body {
     .best-performer--header-main-menu a {
         padding:0.5rem;
         font-size: 2rem;
+        transition: font-size 0.3s ease;
+    }
+
+    .best-performer--header-main-menu a:hover {
+        padding:0.5rem;
+        font-size: 2rem;
+        background-color: transparent;
+        font-size: 3.5rem;
     }
 
     .best-performer--header-open-menu {
@@ -76,5 +122,28 @@ body {
 
     .best-performer--header-logo {
         padding:1rem 0;
+    }
+
+    .best-performer--main-top-players-container, .best-performer--main-top-blogs-container  {
+        grid-template-columns: 100%;
+    }
+
+    .best-performer--main-top-players-container>div {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .best-performer--main-top-blogs-container>div {
+        flex-direction: column;
+    }
+
+    .blog-img-box {
+        justify-content: center;
+    }
+    .blog-img {
+        max-width:50%;
+    }
+    .best-performer--main-top-players-header, .best-performer--main-top-blogs-header {
+        text-align: center;
     }
 }

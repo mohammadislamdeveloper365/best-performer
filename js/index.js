@@ -9,7 +9,7 @@ addListener(openMenu, 'click', function () {
 });
 
 addListener(closeMenu, 'click', function () {
-    mainMenu.style.top = '-100%';
+    mainMenu.style.top = '-120%';
     closeMenu.style.display = 'none';
     openMenu.style.display = 'flex';
 });
