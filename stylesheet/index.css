@@ -1,0 +1,80 @@
+body {
+    font-family:'Signika Negative', sans-serif;
+}
+
+.best-performer--header-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-shadow: 0.8rem 0.5rem 0.8rem red;
+    font-weight: 900;
+    font-style: oblique;
+    color:white;
+}
+
+.best-performer--header-open-menu {
+    font-size:3rem;
+    color:var(--color-light);
+    
+}
+
+.best-performer--header-close-menu {
+    font-size:2.5rem;
+    color:red;
+    
+}
+
+.best-performer--header-main-menu {
+    list-style-type: none;
+}
+
+.best-performer--header-main-menu a {
+    color:var(--color-light);
+    text-decoration: none;
+    /* background-color: var(--color-info); */
+    transition: background-color 2s ease;
+}
+
+.best-performer--header-main-menu a:hover {
+    background-color: var(--color-info);
+}
+
+@media only screen and (max-width:800px) {
+    .best-performer--header-main-menu {
+        flex-direction: column;
+        height:100vh;
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        background-color:var(--secondary-color);
+        top:-100%;
+        right:0;
+        left:0;
+        transition: top 1s ease;
+        
+    }
+
+    .best-performer--header-main-menu a {
+        padding:0.5rem;
+        font-size: 2rem;
+    }
+
+    .best-performer--header-open-menu {
+        display:block;
+        position:absolute;
+        top:1rem;
+        right:1rem;
+    }
+
+    .best-performer--header-close-menu {
+        display:none;
+        position:fixed;
+        top:1rem;
+        right:1rem;
+        z-index : 2;
+    }
+
+
+    .best-performer--header-logo {
+        padding:1rem 0;
+    }
+}
