@@ -59,6 +59,15 @@ body {
     grid-template-columns:1fr 1fr;
 }
 
+.img-course {
+    max-width: 100%;
+    transition: max-width 0.3s;
+}
+
+.img-course:hover {
+    max-width: 120%;
+}
+
 .blog-img-box {
     width:60%;
 }
@@ -95,7 +104,7 @@ body {
         justify-content: center;
         align-items: center;
         background-color:var(--secondary-color);
-        top:-100%;
+        top:-120%;
         right:0;
         left:0;
         transition: top 1s ease;
