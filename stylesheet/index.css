@@ -65,11 +65,16 @@ body {
 
 .blog-img {
     max-width: 100%;
+    transition: max-width 0.3s;
+}
+
+.blog-img:hover {
+    max-width:125%;
 }
 
 .best-performer--main-top-players-container img {
     width:10rem;
-    transition: width 0.5s;
+    transition: width 0.1s;
 }
 
 .best-performer--main-top-players-container img:hover{
@@ -125,7 +130,7 @@ body {
     }
 
     .best-performer--main-top-players-container, .best-performer--main-top-blogs-container  {
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr 1fr;
     }
 
     .best-performer--main-top-players-container>div {
@@ -142,6 +147,11 @@ body {
     }
     .blog-img {
         max-width:50%;
+        transition: max-width 0.3s;
+    }
+
+    .blog-img:hover {
+        max-width:85%;
     }
     .best-performer--main-top-players-header, .best-performer--main-top-blogs-header {
         text-align: center;
