@@ -42,6 +42,10 @@ Container
     padding:0;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
+
 .row {
     display:flex;
     flex-wrap: wrap;
@@ -249,22 +253,20 @@ margin , padding
     margin-bottom:1.5rem;
 }
 
-.m-r-4 {
-    margin-bottom:2rem;
-}
+
 
 .m-r-1 {
-    margin-bottom:0.5rem;
+    margin-right:0.5rem;
 }
 .m-r-2 {
-    margin-bottom:1rem;
+    margin-right:1rem;
 }
 .m-r-3 {
-    margin-bottom:1.5rem;
+    margin-right:1.5rem;
 }
 
 .m-r-4 {
-    margin-bottom:2rem;
+    margin-right:2rem;
 }
 
 
